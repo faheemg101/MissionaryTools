@@ -109,10 +109,10 @@ ul {
 
 @supports (-webkit-transition: transform, opacity) {
   .box {
-    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    -webkit-transition: opacity 200ms linear, -webkit-transform 200ms ease-in-out;
     transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
-    transition: transform 250ms ease-in-out, opacity 250ms linear;
-    transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: transform 200ms ease-in-out, opacity 200ms linear;
+    transition: transform 200ms ease-in-out, opacity 200ms linear, -webkit-transform 200ms ease-in-out;
   }
 
   .box:hover {
@@ -188,5 +188,23 @@ ul {
 
   .topBar a {
     font-size: 70%;
+  }
+
+  @media (max-width: 608px) {
+    * {
+      margin-right: 5px;
+    }
+
+    .topBar .container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 95%;
+    }
+
+    .prayer .container {
+      display: block;
+      text-align: center;
+      
+    }
   }
 }
