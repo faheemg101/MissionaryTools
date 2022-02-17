@@ -23,3 +23,7 @@ async function getTimes(lat, lng) {
         alert('Could not get times.')
     }
 }
+
+window.onload = () => {
+    getLocation()
+}

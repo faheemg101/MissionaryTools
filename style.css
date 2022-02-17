@@ -105,6 +105,7 @@ ul {
 
 .container a {
   text-decoration: none;
+  height: fit-content;
 }
 
 @supports (-webkit-transition: transform, opacity) {
